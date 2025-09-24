@@ -1,11 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 body {
-     font-family: "Space Grotesk", sans-serif;
+    font-family: "Space Grotesk", sans-serif;
+    font-weight: 300;
     colour: #1f1f1f;
+    
     padding: 3rem;
 }
 *:not(:first-child) { margin-block-start: 1em;}
+
+:root {
+    font-size: 150%;
+}
 
 h1 {
     font-size: 4rem;
@@ -13,28 +19,59 @@ h1 {
 }
 
 p {
-  line-height: 140%;
+  line-height: 150%;
 }
 h2 {
-    font-size: 3rem;
+    font-family: "Barlow Condensed", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    text-transform: uppercase;
+    line-height: 90%;
+    font-size: 2rem;
 }
 
 h3 {
     font-size: 2rem;
     line-height: 120%;
+    
 }
 
+.author {
+   font-size: 2rem;
+   line-height: 120%;
+}
 article ol {
 	margin-block: 2em;
-
-	li {
-		list-style-type: numbers;
-		
-	}
+  list-style-type: decimal;
+  margin-inline-start: 2rem;
 }
 
+article ol li::marker {
+
+    font-size: 2rem;
+    font-family: "Barlow Condensed", sans-serif;
+    font-weight: 700;
+		
+	}
+
+
+strong {
+  font-weight: 600;
+}
+
+q {
+font-style: italic;
+}
+
+.response {
+      font-family: "Space Grotesk", sans-serif;
+      font-weight: 400;   
+}
+
+
+
 .barlow {
-  font-family: "Barlow Condensed", sans-serif;
+    font-family: "Barlow Condensed", sans-serif;
     font-weight: 700;
     font-style: normal;
     text-transform: uppercase;
