@@ -20,7 +20,8 @@ h1 {
 
 p {
   line-height: 160%;
-  padding: 1rem;
+  
+  
 }
 
 h2 {
@@ -30,6 +31,7 @@ h2 {
     text-transform: uppercase;
     line-height: 90%;
     font-size: 2rem;
+    margin-block-start: 3em;
 }
 
 h3 {
@@ -37,7 +39,6 @@ h3 {
     line-height: 120%;
     
 }
-
 
 article ol {
 	margin-block: 2em;
@@ -50,7 +51,7 @@ article ol li::marker {
     font-family: "Barlow Condensed", sans-serif;
     font-weight: 700;
 		
-	}
+}
 
 nav li {
 	display: inline;
@@ -58,15 +59,15 @@ nav li {
     font-weight: 300;
     text-transform: uppercase;
     line-height: 90%;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
 }
-
 
 nav {
     width: 100%;
     background-color: #1F1F1F;
     padding: 1rem;
     color: white;
+    margin-block-start: 3em;
 }
 
 strong {
@@ -86,7 +87,20 @@ footer{
     font-weight: 300;
     text-transform: uppercase;
     line-height: 90%;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
+}
+
+.bottom {
+     width: 100%;
+    background-color: #1F1F1F;
+    padding: 1rem;
+    color: white;
+    font-family: "Space Grotesk", sans-serif;
+    font-weight: 300;
+    text-transform: uppercase;
+    line-height: 90%;
+    font-size: 1.2rem;
+    margin-block-start: 3em;
 }
 
 .author {
@@ -109,6 +123,5 @@ footer{
     background-color: #F13523;
     color: white;
     padding: 1rem;
-
 }
 
