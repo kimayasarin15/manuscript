@@ -11,11 +11,13 @@ body {
     font-weight: 300;
     color: #1F1F1F;
    /* padding: 3rem;*/
+   
 }
 
 h1 {
     font-size: 4rem;
     line-height: 100%;
+    margin-block-start: 2rem;
 }
 
 p {
@@ -131,6 +133,9 @@ footer{
 #linkresponse {
     padding-inline-start: 3rem;
     padding-inline-end: 3rem;
+    color: white;
+    background-color: #1F1F1F;
+    padding-block: 1rem;
 }
 
 .barlow {
@@ -142,6 +147,7 @@ footer{
     background-color: #F13523;
     color: white;
     padding: 1rem;
+    margin-inline-end: 10rem;
 }
 
 blockquote {
