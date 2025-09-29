@@ -4,13 +4,13 @@
     font-size: 150%;
 }
 
-*:not(:first-child) { margin-block-start: 1rem;}
+/* *:not(:first-child) { margin-block-start: 1rem;} */
 
 body {
     font-family: "Space Grotesk", sans-serif;
     font-weight: 300;
-    colour: #1F1F1F;
-    padding: 3rem;
+    color: #1F1F1F;
+   /* padding: 3rem;*/
 }
 
 h1 {
@@ -19,8 +19,10 @@ h1 {
 }
 
 p {
-  line-height: 160%;
-  
+    line-height: 160%;
+    margin-block-start: 1rem;
+    max-inline-size: 70ch;
+   
   
 }
 
@@ -32,6 +34,8 @@ h2 {
     line-height: 90%;
     font-size: 2rem;
     margin-block-start: 3em;
+    margin-block-end: 2rem;
+    
 }
 
 h3 {
@@ -44,6 +48,8 @@ article ol {
 	margin-block: 2em;
     list-style-type: decimal;
     margin-inline-start: 2rem;
+    padding-inline-start: 3rem;
+    padding-inline-end: 3rem;
 }
 
 article ol li::marker {
@@ -64,10 +70,15 @@ nav li {
 
 nav {
     width: 100%;
-    background-color: #1F1F1F;
-    padding: 1rem;
-    color: white;
+    color: #1F1F1F;
+    background-color: white;
+    border-block-color: #1F1F1F;
+    border-block-style: solid;
+	border-block-width: 0.1rem;
     margin-block-start: 3em;
+    padding: 1rem;
+    position: sticky;
+    top: 0;
 }
 
 strong {
@@ -80,21 +91,23 @@ font-style: italic;
 
 footer{
     width: 100%;
-    background-color: #1F1F1F;
     padding: 1rem;
     color: white;
+    background-color:  #1F1F1F;
     font-family: "Space Grotesk", sans-serif;
     font-weight: 300;
     text-transform: uppercase;
     line-height: 90%;
     font-size: 1.2rem;
+    margin-block-start: 1rem;
 }
 
 .bottom {
-     width: 100%;
-    background-color: #1F1F1F;
+    width: 100%;
     padding: 1rem;
-    color: white;
+    border-block-color: #1F1F1F;
+    border-block-style: solid;
+	border-block-width: 0.1rem;
     font-family: "Space Grotesk", sans-serif;
     font-weight: 300;
     text-transform: uppercase;
@@ -109,10 +122,16 @@ footer{
 }
 
 .response {
-      font-family: "Space Grotesk", sans-serif;
-      font-weight: 400;   
+    font-family: "Space Grotesk", sans-serif;
+    font-weight: 400;   
+    padding-inline-start: 3rem;
+    padding-inline-end: 3rem;
 }
 
+#linkresponse {
+    padding-inline-start: 3rem;
+    padding-inline-end: 3rem;
+}
 
 .barlow {
     font-family: "Barlow Condensed", sans-serif;
@@ -125,3 +144,8 @@ footer{
     padding: 1rem;
 }
 
+blockquote {
+    margin-block-start: 2rem;
+    margin-block-end: 2rem;
+    
+}
