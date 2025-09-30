@@ -131,6 +131,7 @@ footer{
 .author {
    font-size: 2rem;
    line-height: 120%;
+   margin-inline-end: 20rem;
 }
 
 .response {
@@ -173,6 +174,7 @@ footer{
     color: white;
     padding: 1rem;
     margin-inline-end: 10rem;
+    
 }
 
 blockquote {
@@ -180,5 +182,8 @@ blockquote {
     max-inline-size: 80ch;
     color: white;
     background-color: #F13523;
+    padding-inline-start: 2rem;
     
 }
+
+
