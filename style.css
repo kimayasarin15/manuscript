@@ -24,6 +24,7 @@ p {
     line-height: 160%;
     margin-block-start: 1rem;
     max-inline-size: 70ch;
+    scroll-margin-block-start: 5rem;
    
   
 }
@@ -37,7 +38,7 @@ h2 {
     font-size: 2rem;
     margin-block-start: 3em;
     margin-block-end: 2rem;
-    
+    scroll-margin-block-start: 5rem;
 }
 
 h3 {
@@ -68,6 +69,8 @@ nav li {
     text-transform: uppercase;
     line-height: 90%;
     font-size: 1.2rem;
+    margin-inline-start: 0.5rem;
+    
 }
 
 nav {
@@ -81,6 +84,7 @@ nav {
     padding: 1rem;
     position: sticky;
     top: 0;
+    text-align: right;
 }
 
 strong {
@@ -116,6 +120,7 @@ footer{
     line-height: 90%;
     font-size: 1.2rem;
     margin-block-start: 3em;
+    text-align: right;
 }
 
 .author {
