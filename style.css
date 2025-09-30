@@ -140,6 +140,7 @@ footer{
     padding-inline-end: 3rem;
     max-inline-size: 65ch;
 }
+/* tried a right aligned my response section */ 
 
 #linkresponse {
     padding-inline-start: 3rem;
@@ -148,8 +149,11 @@ footer{
     background-color: #F13523;
     padding-block: 1rem;
     font-size: 4rem;
-    margin-inline-end: 10rem;
 
+}
+
+.myresponse {
+    margin-inline-start: 20rem;
 }
 
 /* tried dark bg white text not sure about it */
@@ -173,6 +177,8 @@ footer{
 
 blockquote {
     margin-block-start: 2rem;
-    margin-block-end: 2rem;
+    max-inline-size: 80ch;
+    color: white;
+    background-color: #F13523;
     
 }
