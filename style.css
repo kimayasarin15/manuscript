@@ -39,7 +39,7 @@ h2 {
     text-transform: uppercase;
     line-height: 90%;
     font-size: 2rem;
-    margin-block-start: 3em;
+    margin-block-start: 6rem;
     margin-block-end: 2rem;
     scroll-margin-block-start: 5rem;
    
@@ -52,11 +52,11 @@ h3 {
 }
 
 article ol {
-	margin-block: 2em;
+	margin-block: 1rem;
     list-style-type: decimal;
     margin-inline-start: 2rem;
-    padding-inline-start: 3rem;
-    padding-inline-end: 3rem;
+    padding-inline-start: 2rem;
+    padding-inline-end: 2rem;
     max-inline-size: 65ch;
 }
 
@@ -85,7 +85,7 @@ nav {
     border-block-color: #1F1F1F;
     border-block-style: solid;
 	border-block-width: 0.1rem;
-    margin-block-start: 3em;
+    margin-block-start: 2rem;
     padding: 1rem;
     position: sticky;
     top: 0;
@@ -154,7 +154,7 @@ footer{
 }
 
 .myresponse {
-    margin-inline-start: 20rem;
+   padding-inline-start: 15rem;
 }
 
 /* tried dark bg white text not sure about it */
@@ -179,7 +179,6 @@ footer{
 
 blockquote {
     margin-block-start: 2rem;
-    max-inline-size: 80ch;
     color: white;
     background-color: #F13523;
     padding-inline-start: 2rem;
