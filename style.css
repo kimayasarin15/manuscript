@@ -10,23 +10,35 @@
 body {
     font-family: "Space Grotesk", sans-serif; 
     font-weight: 300; 
-    color: #1F1F1F;
+    color: #2E2E2E;
  /*   tried playfair serif to echo the orginial text I think Space Grotesk works better on web 
   font-family: "Playfair", serif; */
    /* padding: 3rem;*/
    
 }
 
+header {
+    block-size: 50vh;
+    a {
+    text-decoration: underline;
+}
+a:hover {
+    opacity: 80%;
+}
+}
+
 h1 {
     font-size: 4rem;
     line-height: 100%;
-    margin-block-start: 2rem;
+    margin-block-start: 5rem;
+    margin-block-end: 2rem;
+
 
 }
 
 p {
     line-height: 160%;
-    margin-block-start: 1rem;
+    margin-block-start: 2rem;
     scroll-margin-block-start: 5rem;
    
   
@@ -42,6 +54,7 @@ h2 {
     margin-block-start: 6rem;
     margin-block-end: 2rem;
     scroll-margin-block-start: 5rem;
+    color: #1F1F1F;
    
 }
 
@@ -55,26 +68,34 @@ article ol {
 	margin-block: 1rem;
     list-style-type: decimal;
     margin-inline-start: 2rem;
-    padding-inline-start: 2rem;
-    padding-inline-end: 2rem;
+    padding-inline: 2rem;
     max-inline-size: 65ch;
+
+       a {
+    text-decoration: underline;
+}
+a:hover {
+    color:#F13523
+}
 }
 
 article ol li::marker {
     font-size: 2rem;
     font-family: "Barlow Condensed", sans-serif;
     font-weight: 700;
+    color: #1F1F1F;
 		
 }
 
 nav li {
 	display: inline;
     font-family: "Space Grotesk", sans-serif;
-    font-weight: 300;
+    font-weight: 400;
     text-transform: uppercase;
     line-height: 90%;
     font-size: 1.2rem;
-    margin-inline-start: 0.5rem;
+    margin-inline-start: 1rem;
+    color: #1F1F1F;
     
 }
 
@@ -84,7 +105,7 @@ nav {
     background-color: white;
     border-block-color: #1F1F1F;
     border-block-style: solid;
-	border-block-width: 0.1rem;
+	border-block-width: 0.15rem;
     margin-block-start: 2rem;
     padding: 1rem;
     position: sticky;
@@ -94,6 +115,7 @@ nav {
 
 strong {
   font-weight: 600;
+  color: #1F1F1F;
 }
 
 q {
@@ -113,19 +135,27 @@ footer{
     margin-block-start: 1rem;
 }
 
+span {
+    padding-inline: 1rem;
+}
+
 .bottom {
     width: 100%;
     padding: 1rem;
     border-block-color: #1F1F1F;
     border-block-style: solid;
-	border-block-width: 0.1rem;
+	border-block-width: 0.15rem;
     font-family: "Space Grotesk", sans-serif;
-    font-weight: 300;
+    font-weight: 400;
     text-transform: uppercase;
     line-height: 90%;
     font-size: 1.2rem;
     margin-block-start: 3em;
     text-align: right;
+    ::before {content: " ↑ "}
+    :hover {
+    opacity: 50%;
+}
 }
 
 .author {
@@ -137,17 +167,15 @@ footer{
 .response {
     font-family: "Space Grotesk", sans-serif;
     font-weight: 400;   
-    padding-inline-start: 3rem;
-    padding-inline-end: 3rem;
+    padding-inline: 3rem;
     max-inline-size: 65ch;
 }
 /* tried a right aligned my response section */ 
 
 #linkresponse {
-    padding-inline-start: 3rem;
-    padding-inline-end: 3rem;
+    padding-inline: 3rem;
     color: white;
-    background-color: #F13523;
+    background-color: #1f1f1f;
     padding-block: 1rem;
     font-size: 4rem;
 
@@ -177,12 +205,53 @@ footer{
     
 }
 
+.barlow:first-child {
+    padding-block: 1.5rem;
+}
+
 blockquote {
     margin-block-start: 2rem;
     color: white;
     background-color: #F13523;
     padding-inline-start: 2rem;
+  /*  ::before {content: ' " '} */
+    ::after {content: ' " '}
     
+}
+
+blockquote::before {
+    content: ' " ';
+    font-family: "Barlow Condensed", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    text-transform: uppercase;
+    line-height: 90%;
+    font-size: 2rem;
+}
+
+.download {
+    text-decoration: underline;
+    ::before {content: " ↓ "}
+    :hover {
+    opacity: 50%;
+}
+}
+
+.endline {
+    font-family: "Barlow Condensed", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    text-transform: uppercase;
+    padding-inline: 3rem;
+    color: #1f1f1f;
+    padding-block: 1rem;
+    font-size: 3rem;
+    margin-block-start: 2rem;
+    line-height: 90%;
+}
+
+em {
+    color: #F13523;
 }
 
 
