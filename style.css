@@ -18,7 +18,7 @@ body {
 }
 
 header {
-    block-size: 50vh;
+    block-size: 55vh;
     a {
     text-decoration: underline;
 }
@@ -30,7 +30,7 @@ a:hover {
 h1 {
     font-size: 4rem;
     line-height: 100%;
-    margin-block-start: 5rem;
+    margin-block-start: 4rem;
     margin-block-end: 2rem;
 
 
@@ -70,7 +70,6 @@ article ol {
     margin-inline-start: 2rem;
     padding-inline: 2rem;
     max-inline-size: 65ch;
-
        a {
     text-decoration: underline;
 }
@@ -111,6 +110,7 @@ nav {
 	border-block-width: 0.15rem;
     margin-block-start: 2rem;
     padding: 1rem;
+    padding-inline-end: 2rem;
     position: sticky;
     top: 0;
     text-align: right;
@@ -153,11 +153,13 @@ span {
     text-transform: uppercase;
     line-height: 90%;
     font-size: 1.2rem;
-    margin-block-start: 3em;
+    margin-block-start: 3rem;
+    padding-inline-end: 2rem;
     text-align: right;
-    ::before {content: " ↑ "}
+    ::after {content: " ↑ "}
     :hover {
     opacity: 50%;
+    
 }
 }
 
@@ -203,9 +205,15 @@ span {
     line-height: 90%;
     background-color: #F13523;
     color: white;
-    padding: 1rem;
+    padding-block: 1rem;
+    padding-inline-start: 1.5rem;
     margin-inline-end: 10rem;
     
+}
+
+.barlow:last-child
+{
+    padding-inline-start: 1rem;
 }
 
 .barlow:first-child {
@@ -217,22 +225,17 @@ blockquote {
     color: white;
     background-color: #F13523;
     padding-inline-start: 2rem;
-    ::after {content: '"'}
+    h3::after {content: '”'}
+    h3::before {content: '“'}
 }
 
-blockquote::before {
-    content: ' " ';
-    font-family: "Barlow Condensed", sans-serif;
-    font-weight: 700;
-    font-style: normal;
-    text-transform: uppercase;
-    line-height: 90%;
-    font-size: 2rem;
+h3::before {
+    margin-inline-start: -0.35em;
 }
 
 .download {
     text-decoration: underline;
-    ::before {content: " ↓ "}
+  /*  ::before {content: " ↓ "} */
 }
 
 .endline {
@@ -252,4 +255,6 @@ em {
     color: #F13523;
 }
 
-
+.godown {
+    ::after {content: " ↓ "}
+}
