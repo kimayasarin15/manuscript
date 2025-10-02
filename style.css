@@ -28,9 +28,9 @@ a:hover {
 }
 
 h1 {
-    font-size: 4rem;
+    font-size: 4.5rem;
     line-height: 100%;
-    margin-block-start: 4rem;
+    margin-block-start: 3rem;
     margin-block-end: 2rem;
 
 
@@ -68,8 +68,8 @@ article ol {
 	margin-block: 1rem;
     list-style-type: decimal;
     margin-inline-start: 2rem;
-    padding-inline: 2rem;
-    max-inline-size: 65ch;
+    padding-inline: 3rem;
+    max-inline-size: 62ch;
        a {
     text-decoration: underline;
 }
@@ -108,7 +108,7 @@ nav {
     border-block-color: #1F1F1F;
     border-block-style: solid;
 	border-block-width: 0.15rem;
-    margin-block-start: 2rem;
+    margin-block-start: 4rem;
     padding: 1rem;
     padding-inline-end: 2rem;
     position: sticky;
@@ -173,13 +173,14 @@ span {
    font-size: 2rem;
    line-height: 120%;
    margin-inline-end: 20rem;
+   
 }
 
 .response {
     font-family: "Space Grotesk", sans-serif;
     font-weight: 400;   
     padding-inline: 3rem;
-    max-inline-size: 65ch;
+    max-inline-size: 60ch;
 }
 /* tried a right aligned 'my response' section */ 
 
@@ -223,8 +224,14 @@ span {
 }
 
 .barlow:first-child {
-    padding-block: 2rem;
+    padding-block: 1.5rem;
+    padding-inline: 2rem;
 }
+
+.barlow:nth-child(2){
+    padding-inline: 2rem;
+}
+
 
 blockquote {
     margin-block-start: 2rem;
