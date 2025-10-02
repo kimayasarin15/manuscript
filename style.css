@@ -175,7 +175,7 @@ span {
     padding-inline: 3rem;
     max-inline-size: 65ch;
 }
-/* tried a right aligned my response section */ 
+/* tried a right aligned 'my response' section */ 
 
 #linkresponse {
     padding-inline: 3rem;
@@ -217,7 +217,7 @@ span {
 }
 
 .barlow:first-child {
-    padding-block: 1.5rem;
+    padding-block: 2rem;
 }
 
 blockquote {
