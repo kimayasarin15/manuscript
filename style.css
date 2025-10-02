@@ -117,8 +117,14 @@ nav {
 }
 
 strong {
-  font-weight: 600;
-  color: #1F1F1F;
+ font-weight: 600;
+  color: #1F1F1F; 
+
+  /* Potentially bring the 'red tab' to the body copy? Feels distracting and maybe over indexing on the 'tab'?
+  font-weight: 400;
+  color: white;
+  background-color: #F13523;
+  padding: 0.2rem; */
 }
 
 q {
