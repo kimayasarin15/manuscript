@@ -68,7 +68,7 @@ article ol {
 	margin-block: 1rem;
     list-style-type: decimal;
     margin-inline-start: 2rem;
-    padding-inline: 3rem;
+    padding-inline: 4rem;
     max-inline-size: 62ch;
        a {
     text-decoration: underline;
@@ -194,7 +194,7 @@ span {
 }
 
 .myresponse {
-   padding-inline-start: 15rem;
+   padding-inline-start: 16.75rem;
 }
 
 /* tried dark bg white text not sure about it */
