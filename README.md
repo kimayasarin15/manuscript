@@ -1,3 +1,2 @@
-MPS CD Typography & Interaction Project 1
 A response to 'Ten Footnotes to a Manifesto' by Michael Bierut
-My first website for the class
+My first website for Typography & Interaction MPS CD 25-26
