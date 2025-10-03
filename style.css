@@ -194,7 +194,7 @@ span {
 }
 
 .myresponse {
-   padding-inline-start: 16.75rem;
+   margin-inline-start: 16.8rem;
 }
 
 /* tried dark bg white text not sure about it */
@@ -213,15 +213,11 @@ span {
     background-color: #F13523;
     color: white;
     padding-block: 1rem;
-    padding-inline-start: 1.5rem;
     margin-inline-end: 10rem;
     
 }
 
-.barlow:last-child
-{
-    padding-inline-start: 1rem;
-}
+
 
 .barlow:first-child {
     padding-block: 1.5rem;
@@ -237,7 +233,7 @@ blockquote {
     margin-block-start: 2rem;
     color: white;
     background-color: #F13523;
-    padding-inline-start: 2rem;
+    padding-inline-start: 1rem;
     h3::after {content: '”'}
     h3::before {content: '“'}
 }
