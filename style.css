@@ -2,36 +2,50 @@
 @import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Playfair:ital,opsz,wght@0,5..1200,300..900;1,5..1200,300..900&display=swap');
 :root {
-    font-size: 150%;
+    font-size: 100%;
+    --dark:#1F1F1F;
+    --light: #FFFFFF;
+    --accent:#F13523; 
+    --font1: "Barlow Condensed", sans-serif;
+    --font2: "Space Grotesk", sans-serif; 
+    --weight1: 300;
+    --weight2: 400;
+    --weight3: 700;
+
 }
 
-/* *:not(:first-child) { margin-block-start: 1rem;} */
 
 body {
-    font-family: "Space Grotesk", sans-serif; 
-    font-weight: 300; 
-    color: #2E2E2E;
- /*   tried playfair serif to echo the orginial text I think Space Grotesk works better on web 
-  font-family: "Playfair", serif; */
-   /* padding: 3rem;*/
+    font-family: var(--font2);
+    font-weight: var(--weight1);
+    color: var(--dark);
    
 }
 
 header {
     block-size: 55vh;
-    a {
-    text-decoration: underline;
-}
 a:hover {
     opacity: 80%;
 }
 }
 
 h1 {
-    font-size: 4.5rem;
     line-height: 100%;
     margin-block-start: 3rem;
     margin-block-end: 2rem;
+
+    @media (width < 600px) {
+        font-size: 3.4rem;
+    }
+
+    @media (width > 600px) {
+        font-size: 4.5rem;
+        margin-inline-end: 10rem;  
+    }
+    @media (width > 900px) {
+        font-size: 7rem;
+    }
+
 
 
 }
@@ -39,14 +53,12 @@ h1 {
 p {
     line-height: 160%;
     margin-block-start: 2rem;
-    scroll-margin-block-start: 5rem;
-   
-  
+    scroll-margin-block-start: 5rem;  
 }
 
 h2 {
-    font-family: "Barlow Condensed", sans-serif;
-    font-weight: 700;
+    font-family: var(--font1);
+    font-weight: var(--weight3);
     font-style: normal;
     text-transform: uppercase;
     line-height: 90%;
@@ -54,77 +66,143 @@ h2 {
     margin-block-start: 6rem;
     margin-block-end: 2rem;
     scroll-margin-block-start: 5rem;
-    color: #1F1F1F;
+    color: var(--dark);
+
+    @media (width < 600px) {
+        margin-block-start: 0.5rem;
+    }
+    @media (width > 600px) {
+        font-size: 2.3rem;
+    }
+
+    @media (width > 900px) {
+        font-size: 3rem;
+    }
    
 }
 
 h3 {
     font-size: 2rem;
-    line-height: 120%;
-    
+    line-height: 120%;   
+    @media (width > 600px) {
+        font-size: 2.5rem;
+    }
+
+    @media (width > 900px) {
+        font-size: 3rem;
+    }
+
 }
 
 article ol {
-	margin-block: 1rem;
+	margin-block: 3rem;
     list-style-type: decimal;
-    margin-inline-start: 2rem;
-    padding-inline: 4rem;
-    max-inline-size: 62ch;
+    max-inline-size: 85ch;
        a {
     text-decoration: underline;
 }
 a:hover {
-    color:#F13523
+    color: var(--accent);
 }
+
+@media (width < 600px) {
+    padding-inline: 2rem;
+    list-style-position: inside;
 }
+
+@media (width > 600px) {
+    padding-inline: 4rem;
+}
+
+
+@media (width > 900px) {
+   padding-inline-start: 8rem;
+}
+
+
+}
+
+article ol li {
+    margin-block: 3rem;
+}
+
+article p {
+    font-size: 1rem;
+    @media (width > 600px)  {
+        font-size: 1.2rem;
+    }
+    @media (width > 900px) {
+        font-size: 1.5rem;
+    }
+}
+
 
 article ol li::marker {
     font-size: 2rem;
-    font-family: "Barlow Condensed", sans-serif;
-    font-weight: 700;
-    color: #1F1F1F;
+    font-family: var(--font1);
+    font-weight: var(--weight3);
+    color: var(--dark);
+    @media (width > 600px) {
+        font-size: 2.3rem;
+    }
+    @media (width > 900px) {
+        font-size: 3rem;
+    }
 		
 }
 
 nav li {
-	display: inline;
-    font-family: "Space Grotesk", sans-serif;
+    font-family: var(--font2);
     font-weight: 400;
     text-transform: uppercase;
     line-height: 90%;
-    font-size: 1.2rem;
-    margin-inline-start: 1rem;
-    color: #1F1F1F;
+    font-size: 1.5rem;
+    color: var(--dark);
      :hover {
     opacity: 50%;
+}
+
+
+@media (width > 900px) {
+   font-size: 2rem;
+   padding-block: 1rem;
 }
     
 }
 
+nav ul {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    justify-content: end;
+
+@media (width > 600px)  {
+       gap: 2rem;
+}
+@media (width > 900px) {
+   gap: 3rem;
+   margin-inline-end: 2rem;
+}
+
+
+
+}
 nav {
     width: 100%;
-    color: #1F1F1F;
-    background-color: white;
-    border-block-color: #1F1F1F;
+    color: var(--dark);
+    background-color: var(--light);
+    border-block-color: var(--dark);
     border-block-style: solid;
 	border-block-width: 0.15rem;
     margin-block-start: 4rem;
     padding: 1rem;
-    padding-inline-end: 2rem;
     position: sticky;
     top: 0;
-    text-align: right;
 }
 
 strong {
  font-weight: 600;
-  color: #1F1F1F; 
-
-  /* Potentially bring the 'red tab' to the body copy? Feels distracting and maybe over indexing on the 'tab'?
-  font-weight: 400;
-  color: white;
-  background-color: #F13523;
-  padding: 0.2rem; */
+  color: var(--dark);
 }
 
 q {
@@ -135,13 +213,30 @@ footer{
     width: 100%;
     padding: 1rem;
     color: white;
-    background-color:  #1F1F1F;
-    font-family: "Space Grotesk", sans-serif;
-    font-weight: 300;
+    background-color: var(--dark);
+    font-family: var(--font2);
+    font-weight: var(--weight1);
     text-transform: uppercase;
     line-height: 90%;
     font-size: 1.2rem;
     margin-block-start: 1rem;
+    display: flex;
+    flex-direction: column;
+
+p {
+    margin-block-start: 0rem;
+}
+    
+@media (width > 600px) {
+    flex-direction: row;
+    gap: 1rem;
+}
+
+@media (width > 900px) {
+    gap: 2rem;
+    font-size: 1.5rem;
+}
+    
 }
 
 span {
@@ -151,11 +246,11 @@ span {
 .bottom {
     width: 100%;
     padding: 1rem;
-    border-block-color: #1F1F1F;
+    border-block-color: var(--dark);
     border-block-style: solid;
 	border-block-width: 0.15rem;
-    font-family: "Space Grotesk", sans-serif;
-    font-weight: 400;
+    font-family: var(--font2);
+    font-weight: var(--weight2);
     text-transform: uppercase;
     line-height: 90%;
     font-size: 1.2rem;
@@ -164,56 +259,112 @@ span {
     text-align: right;
     ::after {content: " ↑ "}
     :hover {
-    opacity: 50%;
-    
+    opacity: 50%;    
+}
+@media (width > 600px) {
+    font-size: 1.5rem;
+}
+@media (width > 900px) {
+    font-size: 2rem;
 }
 }
 
+
+
 .author {
-   font-size: 2rem;
+   font-size: 1.8rem;
    line-height: 120%;
-   margin-inline-end: 20rem;
+   margin-inline-end: 10rem;  
+
+@media (width > 600px)  {
+       font-size: 2.5rem;
+    }
+
+@media (width > 900px) {
+   font-size: 3rem;
+}
+  
    
 }
 
+.author::after {
+    content: " → ";
+}
+
 .response {
-    font-family: "Space Grotesk", sans-serif;
-    font-weight: 400;   
-    padding-inline: 3rem;
+    font-family: var(--font2);
+    font-weight: var(--weight2);  
+    padding-inline: 2rem;
     max-inline-size: 60ch;
 }
-/* tried a right aligned 'my response' section */ 
+
 
 #linkresponse {
-    padding-inline: 3rem;
-    color: white;
-    background-color: #1f1f1f;
+    padding-inline: 2rem;
+    color: var(--light);
+    background-color: var(--dark);
     padding-block: 1rem;
-    font-size: 4rem;
+    font-size: 6rem;
+
+@media (width < 600px) {
+    font-size: 3.4rem;
+    }
+
+@media (width > 600px) {
+    font-size: 4.5rem;
+    }
+
+@media (width > 900px) {
+    font-size: 6rem;
+    }
 
 }
 
 .myresponse {
-   margin-inline-start: 16.8rem;
+
+    margin-block-start: 10rem;
+
+@media (width < 600px) {
+    margin-inline-start: 0rem;    
 }
 
-/* tried dark bg white text not sure about it */
-/* .myresponse {
-    color: white;
-    background-color: #1F1F1F;
-    padding-block: 2rem;
-} */
+@media (width > 600px)  {
+    margin-inline-start: 4rem;
+}
+
+@media (width > 900px) {
+   margin-inline-start: 8rem;
+}
+
+
+@media (width > 1200px)  {
+    margin-inline-start: 20rem;
+    padding-inline-start: 4rem;
+}
+
+}
+
+
 
 .barlow {
-    font-family: "Barlow Condensed", sans-serif;
-    font-weight: 700;
+    font-family: var(--font1);
+    font-weight: var(--weight3);
     font-style: normal;
     text-transform: uppercase;
     line-height: 90%;
-    background-color: #F13523;
-    color: white;
+    background-color: var(--accent);
+    color: var(--light);
     padding-block: 1rem;
-    margin-inline-end: 10rem;
+
+@media (width < 600px) {
+    margin-inline-end: 0rem;
+}
+
+@media (width > 900px) {
+    margin-inline-end: 20rem;
+}
+
+
     
 }
 
@@ -231,8 +382,8 @@ span {
 
 blockquote {
     margin-block-start: 2rem;
-    color: white;
-    background-color: #F13523;
+    color: var(--light);
+    background-color: var(--accent);
     padding-inline-start: 1rem;
     h3::after {content: '”'}
     h3::before {content: '“'}
@@ -242,28 +393,83 @@ h3::before {
     margin-inline-start: -0.35em;
 }
 
-.download {
-    text-decoration: underline;
-  /*  ::before {content: " ↓ "} */
-}
+
+
 
 .endline {
-    font-family: "Barlow Condensed", sans-serif;
-    font-weight: 700;
-    font-style: normal;
+    font-family: var(--font1);
+    font-weight: var(--weight3);
     text-transform: uppercase;
-    padding-inline: 3rem;
-    color: #1f1f1f;
+    padding-inline: 2rem;
+    color: var(--dark);
     padding-block: 1rem;
     font-size: 3rem;
     margin-block-start: 2rem;
     line-height: 90%;
+
+     @media (width < 600px) {
+        font-size: 2.5rem;
+    }
+     @media (width > 900px) {
+        font-size: 4rem;
+        max-width: 32ch;
+    }
 }
 
 em {
-    color: #F13523;
+    color: var(--accent);
 }
 
 .godown {
-    ::after {content: " ↓ "}
+    color: var(--light);
+    background-color: var(--dark);
+     padding-block: 1rem;
+    padding-inline: 2rem;
+    ::after {content: " ↓ "};
 }
+
+.download::after {
+    content: " → ";
+  /*  ::before {content: " ↓ "} */
+}
+
+.download {
+    color: var(--light);
+    background-color: var(--accent);
+    padding-block: 1rem;
+    padding-inline: 2rem;
+}
+
+.links {
+    display: flex;
+    flex-direction: column;
+    font-family: var(--font1);
+    font-weight: var(--weight3);
+    text-transform: uppercase;
+    font-size: 1.8rem;
+    margin-block-end: 6rem;
+    margin-block-start: 3rem;
+
+a:hover {
+    opacity: 80%;
+}
+
+@media (width > 600px) {
+    flex-direction: row;
+    gap: 2rem;       
+}
+@media (width > 900px) {
+    margin-inline-end: 15rem;
+    font-size: 2.5rem;
+}
+}
+
+
+
+
+
+
+
+
+
+
