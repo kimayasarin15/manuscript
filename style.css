@@ -43,6 +43,10 @@ h1 {
         margin-inline-end: 10rem;  
     }
     @media (width > 900px) {
+        font-size: 6rem;
+    }
+
+    @media (width > 1200px) {
         font-size: 7rem;
     }
 
